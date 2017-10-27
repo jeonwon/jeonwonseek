@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title >
+     WonSeekJeon
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<div align="center">
+  <p *ngIf='show' >
+   엔지 이프 쇼 If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+   <div *ngFor='let jw of jws; let i = index'  >
+   
+   {{i+1+"번째"+ jw.firstname+jw.lastname+"나이는"+jw.age+"입니다. 나이는 나이일 뿐입니다."}}
+ </div>
+  <button ion-button (click)="onClick();" >jeonwongo</button>
+  </div>
+
+</ion-content>
